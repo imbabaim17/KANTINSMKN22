@@ -28,30 +28,34 @@
     <button id="toggleMode" class="bg-[#0d4671] text-white px-3 py-1 rounded text-sm">🌙 Dark Mode</button>
   </div>
 
-  <!-- Navbar -->
-<nav class="sticky top-0 bg-[#0d4671] text-white px-6 py-4 shadow-md z-50">
+  <nav class="sticky top-0 bg-[#0d4671] text-white px-6 py-4 shadow-md z-50">
   <div class="container mx-auto flex justify-between items-center">
-    <div class="text-xl font-bold">KANTIN SEHAT</div>
+    <div class="text-xl font-bold">SMKN 22 JAKARTA</div>
     
-    <ul class="hidden md:flex space-x-6 items-center">
+    <!-- Tombol Menu Mobile -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Navigasi -->
+    <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
       <li><a href="#Home" class="hover:text-[#92e1e2]">Home</a></li>
       <li><a href="#About" class="hover:text-[#92e1e2]">About</a></li>
-  <!-- Dropdown: List Kantin -->
-  <li class="relative group">
-    <button class="hover:text-[#92e1e2] focus:outline-none">Kantin</button>
-    <ul class="absolute top-full left-0 bg-white text-[#2c3e50] mt-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50 min-w-[160px]">
-      <li><a href="#kantin-1" class="block px-4 py-2 hover:bg-[#92e1e2]">Bisen</a></li>
-      <li><a href="#kantin-2" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 2</a></li>
-      <li><a href="#kantin-3" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 3</a></li>
-      <li><a href="#kantin-4" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 4</a></li>
-      <li><a href="#kantin-5" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 5</a></li>
-      <li><a href="#kantin-6" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 6</a></li>
-      <li><a href="#kantin-7" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 7</a></li>
-      <li><a href="#kantin-8" class="block px-4 py-2 hover:bg-[#92e1e2]">Kantin 8</a></li>
-    </ul>
-  </li>
+      <li><a href="#kantin-1" class="hover:text-[#92e1e2]">Kantin</a></li>
       <li><a href="#kontak" class="hover:text-[#92e1e2]">Kontak</a></li>
     </ul>
+  </div>
+
+  <!-- Menu Mobile Dropdown -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pt-2 pb-4">
+    <a href="#Home" class="block py-1 hover:text-[#92e1e2]">Home</a>
+    <a href="#About" class="block py-1 hover:text-[#92e1e2]">About</a>
+    <a href="#kantin-1" class="block py-1 hover:text-[#92e1e2]">Kantin</a>
+    <a href="#kontak" class="block py-1 hover:text-[#92e1e2]">Kontak</a>
   </div>
 </nav>
 
